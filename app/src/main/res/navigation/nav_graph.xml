@@ -1,0 +1,19 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/quoteListFragment">
+
+    <fragment
+        android:id="@+id/quoteListFragment"
+        android:name="mk.ukim.finki.lab_3.ui.QuoteListFragment"
+        android:label="Quote List">
+        <action
+            android:id="@+id/action_quoteListFragment_to_quoteDetailsFragment"
+            app:destination="@id/quoteDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quoteDetailsFragment"
+        android:name="mk.ukim.finki.lab_3.ui.QuoteDetailsFragment"
+        android:label="Quote Details" />
+</navigation>
